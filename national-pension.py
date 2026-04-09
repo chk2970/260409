@@ -72,7 +72,7 @@ class PensionData():
     def get_data(self):
         return self.df
 
-@st.cache_data
+@st.cache_resource
 def read_pensiondata():
     file_id = '1UPNnu29JtZsJDNQsXT_TbrBJtbvMXEqn'
     url = f'https://drive.google.com/uc?id={file_id}'
